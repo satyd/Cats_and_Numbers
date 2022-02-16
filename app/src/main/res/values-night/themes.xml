@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CatsMath" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        
+        <item name="colorOnPrimary">@color/teal_dark</item>
+        <item name="colorSecondary">@color/teal_gut</item>
+        
+        <!-- Status bar color. -->
+        
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="bigTextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="smallText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tintForBg">
+        <item name="android:backgroundTint">@color/less_black</item>
+        <item name="android:backgroundTintMode">src_atop</item>
+    </style>
+</resources>

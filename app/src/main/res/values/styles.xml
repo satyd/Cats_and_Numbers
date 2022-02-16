@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <style name="MyFabStyle" parent="@style/Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/soft_cyan</item>
+        
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+</resources> 

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nf_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_nf"
+    style="@style/tintForBg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/num_fact_TW"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/num_fact_TextView"
+                style="@style/bigTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="always"
+                android:padding="16dp"
+                android:scrollbars="vertical"
+                android:shadowColor="@color/less_black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
+                android:text="@string/num_fact_TW_text"
+                android:textAlignment="center"
+                
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+
+        android:id="@+id/numFacts_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/num_facts_types"
+        
+        app:layout_constraintBottom_toTopOf="@+id/next_numfact_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_facts_ET" />
+
+
+    <EditText
+        android:id="@+id/num_facts_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="put a number to know about"
+        android:hint="@string/numfact_hint"
+        
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:outlineSpotShadowColor="@color/black"
+        
+        app:layout_constraintBottom_toTopOf="@+id/numFacts_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_fact_TW" />
+
+    <Button
+        android:id="@+id/next_numfact_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        
+        
+        android:text="@string/num_fact_btn_text"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numFacts_spinner" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:backgroundTint="@color/soft_cyan"
+        
+        android:src="@drawable/settings_icon"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/num_facts_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numFacts_spinner"
+        app:layout_constraintTop_toTopOf="@+id/num_facts_ET" />
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/settings_container"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:elevation="5dp"-->
+    <!--        />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

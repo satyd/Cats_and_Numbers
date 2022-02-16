@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cats &amp; Numbers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="num_fact_btn_text">next fact</string>
+    <string name="num_fact_TW_text">"some fact "</string>
+    <string name="numfact_hint">#?</string>
+    <string name="notifications_setting_on">Enabled</string>
+    <string name="notifications_setting_off">Disabled</string>
+    <string name="settings_text">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_time_key">notificationTime</string>
+</resources>
