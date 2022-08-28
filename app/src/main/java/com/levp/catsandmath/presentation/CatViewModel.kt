@@ -44,7 +44,7 @@ class CatViewModel(
             } catch (exception: Exception) {
 
                 uiState.value =
-                    UiStateCat.Error("You network don't want u to see cats :(\ntry again later")
+                    UiStateCat.Error("You network don't want you to see cats :(\ntry again later")
             }
         }
     }

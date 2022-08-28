@@ -12,18 +12,17 @@ import androidx.preference.DialogPreference
 import java.util.*
 
 
-class TimePref(ctxt: Context?, attrs: AttributeSet?, defStyle: Int) :
+class TimePref(ctxt: Context, attrs: AttributeSet?, defStyle: Int) :
     DialogPreference(ctxt, attrs, defStyle) {
     //private val calendar: Calendar?
     private var picker: TimePicker? = null
 
-    constructor(ctxt: Context?) : this(ctxt, null) {}
-    constructor(ctxt: Context?, attrs: AttributeSet?) : this(
+    constructor(ctxt: Context) : this(ctxt, null)
+    constructor(ctxt: Context, attrs: AttributeSet?) : this(
         ctxt,
         attrs,
         R.attr.dialogPreferenceStyle
-    ) {
-    }
+    )
 
 //    
 //    protected fun onCreateDialogView(): View {

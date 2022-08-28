@@ -82,7 +82,7 @@ class SettingsActivity : AppCompatActivity() {
                 .build()
         }
 
-        override fun onPreferenceTreeClick(preference: Preference?): Boolean {
+        override fun onPreferenceTreeClick(preference: Preference): Boolean {
             val prefs: SharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(requireContext())
 

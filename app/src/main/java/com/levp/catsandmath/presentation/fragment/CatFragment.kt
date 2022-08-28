@@ -67,12 +67,6 @@ class CatFragment : Fragment() {
             viewModel.getNormalCat()
         }
         else{
-            
-            
-//            Glide.with(this)
-//                .asGif()
-//                .load(R.drawable.gif_loading)
-//                .into(display_pic)
 
             noInternetToast(this.requireContext())
         }
